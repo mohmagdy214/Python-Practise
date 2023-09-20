@@ -1,0 +1,22 @@
+in @staticmethod in python oop we can access to the reference by class name and the method inside it 
+
+
+## class Pizza:
+'''      some methods        '''
+print(Pizza.circle_area(5)) #in example		
+
+
+-----------------------------------------------------------------------------------------------------------
+
+@classmethod : cls insted of self بتكون زي الكونيستراكتور بتورث القيم من ميثودز الكونستراكتور الاولي بس بتاخد نفس البرامترز مع 
+
+
+## class Students:
+
+	def __init__(self,name,age):
+		self.name = name
+		self.age = age
+	
+	@classmethod
+		def Frombithday(cls,name,bithday):
+			return cls(name,date.today().year-bithday) #'date.today().year' is a func from modul
